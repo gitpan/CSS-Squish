@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                CSS-Squish
-version:             0.06
+version:             0.07
 abstract:            Compact many CSS files into one big file
 license:             ~
 generated_by:        ExtUtils::MakeMaker version 6.36
