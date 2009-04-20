@@ -1,9 +1,10 @@
+use 5.008;
 use strict;
 use warnings;
 
 package CSS::Squish;
 
-$CSS::Squish::VERSION = '0.07';
+$CSS::Squish::VERSION = '0.08';
 
 # Setting this to true will enable lots of debug logging about what
 # CSS::Squish is doing
@@ -30,6 +31,10 @@ CSS::Squish - Compact many CSS files into one big file
 
 This module takes a list of CSS files and concatenates them, making sure
 to honor any valid @import statements included in the files.
+
+The benefit of this is that you get to keep your CSS as individual files,
+but can serve it to users in one big file, saving the overhead of possibly
+dozens of HTTP requests.
 
 Following the CSS 2.1 spec, @import statements must be the first rules in
 a CSS file.  Media-specific @import statements will be honored by enclosing
